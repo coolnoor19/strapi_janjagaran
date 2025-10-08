@@ -432,8 +432,14 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.Text &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 80;
+        maxLength: 2500;
       }>;
+    isBreaking: Schema.Attribute.Boolean;
+    isCelebrity: Schema.Attribute.Boolean;
+    isExclusiveContent: Schema.Attribute.Boolean;
+    isFreshStories: Schema.Attribute.Boolean;
+    isPopular: Schema.Attribute.Boolean;
+    isRecent: Schema.Attribute.Boolean;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

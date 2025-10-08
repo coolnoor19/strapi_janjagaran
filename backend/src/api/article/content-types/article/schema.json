@@ -17,7 +17,7 @@
     },
     "description": {
       "type": "text",
-      "maxLength": 80
+      "maxLength": 2500
     },
     "slug": {
       "type": "uid",
@@ -63,6 +63,24 @@
         "videos",
         "audios"
       ]
+    },
+    "isBreaking": {
+      "type": "boolean"
+    },
+    "isExclusiveContent": {
+      "type": "boolean"
+    },
+    "isPopular": {
+      "type": "boolean"
+    },
+    "isRecent": {
+      "type": "boolean"
+    },
+    "isFreshStories": {
+      "type": "boolean"
+    },
+    "isCelebrity": {
+      "type": "boolean"
     }
   }
 }
